@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>endless runner</title>
+</head>
+<body>
+    <div id="game">
+        <img style="position: absolute;opacity: .6;" src=
+        "sky2.png" width="350px" height="250px">
+         <img style="position: absolute;opacity;left:350px;opacity : .6;" src=
+        "sky2.png" width="350px" height="250px">
+        <div id="chicken">
+            <img src="C:\Users\ejaki\OneDrive\Documents\Besides school so far check\Freeeeee Folder!\other game coding\infinate runner 2\pics\chicken.png" width="60px" height="
+            60px">
+         </div>
+        <div id="obstacle">
+            <img src="haystack.jpg" width="60px" height="
+            50px">
+        </div>
+    <div id="ground">
+        <img src="ground2.jpg" width="700" height="50"></script>
+    </div>
+</body>
+<script src="C:\Users\ejaki\OneDrive\Documents\Besides school so far check\Freeeeee Folder!\other game coding\infinate runner 2\endlessrunner.js"></script>
+<style type="text/css">`
+    body{
+        margin: 0;
+        padding: 0;
+        background: #111;
+    }
+    #game{
+        width: 700px;
+        height:250px;
+        background: navy;
+        position:absolute;
+        top: 50px;
+    }
+        #chicken{
+            width: 60px ;
+            height: 60px;
+            position: relative;
+            top: 190px;
+            left: 100px;
+        }
+    }
+    .animate{
+        animation: jump .5s linear 0s;
+    }
+    @keyframes jump{
+        0%{top: 150px;}
+        30%{top: 100px;}
+        70%{top: 100px;}
+        100%{top: 150px;}
+    }
+    #ostacle{
+         width: 50px;
+        height:50px;
+        background: green;
+        position:relative;
+        top: 150px;
+        left: 100%;
+        animation: block 1.3s infinite linear;
+    }
+    @keyframes obstacle{
+        0%{left: 680px;}
+        100%{left: -680px}
+    }
+    #ground{
+         width: 700px;
+        height:50px;
+         background: brown;
+          position:absolute;
+        top: 300px;
+    }
+</style>
+</html>
